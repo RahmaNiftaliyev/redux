@@ -137,7 +137,7 @@ a.contents__link.contents__link--active {
   font-weight: 600;
 }
 
-a:visited {
+a:visited:not(.menu__link, .table-of-contents__link, .navbar__link:not([target="_blank"])) {
   color: var(--ifm-color-primary);
 }
 
@@ -279,4 +279,10 @@ details.detailed-explanation p {
 .admonition .admonition-icon svg {
   fill: black;
   stroke: black;
+}
+
+/* course callout on home page */
+.course-callout.home-mid {
+  max-width: 900px;
+  margin: 1rem auto 2rem;
 }
